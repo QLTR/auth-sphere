@@ -1,0 +1,24 @@
+{
+  "name": "auth-sphere",
+  "version": "0.0.1",
+  "description": "Authentication micro service",
+  "main": "handler.js",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .;exit 0;"
+  },
+  "author": "Kevin Loiseau",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.437.0",
+    "bluebird": "^3.5.4",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-node": "^9.1.0"
+  }
+}
