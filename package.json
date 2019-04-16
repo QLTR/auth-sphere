@@ -14,8 +14,11 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.437.0",
+    "bcrypt": "^3.0.6",
     "bluebird": "^3.5.4",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "serverless": "^1.44.1",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
