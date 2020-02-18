@@ -8,8 +8,11 @@ module.exports = {
   ],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
+  testRegex: '(/__tests__/.*|(\\.|_|/)(test|spec))\\.jsx?$',
   // testMatch: [
   //   "**/__tests__/**/*.[jt]s?(x)",
   //   "**/?(*.)+(spec|test).[tj]s?(x)"
   // ],
+  setupFilesAfterEnv: ['./jest.setup.js'],
+  preset: '@shelf/jest-dynamodb'
 };

@@ -11,7 +11,7 @@ async function handler(event) {
   return update(params)
     .then(user => { return apiResponse(200, serialize(user)); })
     .catch(error => { return apiErrorResponse(error); });
-};
+}
 
 async function update(params) {
   let datas = Object.assign({}, params);
