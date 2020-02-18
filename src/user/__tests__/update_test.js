@@ -32,8 +32,8 @@ afterEach(async () =>{
 
 describe('User#update', () => {
   it('should get the user from dynamoDB', async () => {
-    newParams = { id: user.id, name: 'new_name',
-      email: 'new.email@auth-sphere.com', password: 'newpassword1234567890' }
+    const newParams = { id: user.id, name: 'new_name',
+      email: 'new.email@auth-sphere.com', password: 'newpassword1234567890' };
     const item = await update(newParams);
     expect(item).not.toEqual(user);
 
@@ -49,8 +49,8 @@ describe('User#update', () => {
 
 describe('User#handler', () => {
   it('should return 200 with updated user', async () => {
-    newParams = { name: 'new_name', email: 'new.email@auth-sphere.com',
-      password: 'newpassword1234567890' }
+    const newParams = { name: 'new_name', email: 'new.email@auth-sphere.com',
+      password: 'newpassword1234567890' };
     const event = { pathParameters: { id: user.id },
       body: JSON.stringify(newParams) };
 
